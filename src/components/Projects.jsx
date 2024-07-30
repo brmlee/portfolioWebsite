@@ -2,9 +2,10 @@
 import React from "react";
 import vpn from '../assets/vpn.png'
 import copeople from '../assets/copeople.png'
+import dpm_safesteps from '../assets/dpm_safesteps.jpg'
 import Footer from './Footer'
 
-const ProjectCard = ({ image, title, description, git, technologies }) => {
+const ProjectCard = ({ image, title, description, links, technologies }) => {
     return (
         <div className="max-w-sm sm:max-w-sm md:max-w-sm bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             {title==='Snap Shot' && <a href="/#">
@@ -12,6 +13,9 @@ const ProjectCard = ({ image, title, description, git, technologies }) => {
             </a>}
             {title==='Co People' && <a href="/#">
                 <img className="w-full rounded-t-lg h-auto object-cover " src={copeople} alt="" />
+            </a>}
+            {title==='Safe Steps' && <a href="/#">
+                <img className="w-full rounded-t-lg h-auto object-cover " src={dpm_safesteps} alt="" />
             </a>}
             <div className="p-4 sm:p-6">
                 <a href="/#">
@@ -30,7 +34,7 @@ const ProjectCard = ({ image, title, description, git, technologies }) => {
                         </p>
                     ))}
                 </div>
-                <a href={git} className="text-red-300 border border-gray-200 rounded-lg shadow p-1 sm:p-2 lg:p-3 hover:text-green-500 duration-300">GitHub</a>
+                <a href={links} className="text-red-300 border border-gray-200 rounded-lg shadow p-1 sm:p-2 lg:p-3 hover:text-green-500 duration-300">Links:</a>
             </div>
         </div>
     );
@@ -48,7 +52,6 @@ const Projects = () => {
                         title={item.title}
                         description={item.description}
                         links={item.links}
-                        git={item.git}
                         technologies={item.technologies}
                     />
                 ))}
@@ -64,15 +67,22 @@ export const project = [
         title:'Co People',
         description:'Co People is a dynamic web application I crafted using React, Node JS and React. This project is a modern and engaging social platform that allows users to connect, share content and interact seamlessly.',
         image: {vpn},
-        git:'https://github.com/nithingooud/CoPeople',
+        links:'https://github.com/nithingooud/CoPeople',
         technologies:['MongoDb' ,'ReactJS' , 'NodeJS']
     },
     {
         title:'Snap Shot',
         description:'SnapShot is a stunning portfolio that I exclusively designed using React JS and tailwind CSS.This Project serves as a representation of a photographer’s work, highlighting their portfolio and services.',
         image: {copeople},
-        git:"https://github.com/nithingooud/vpn_studios",
+        links:"https://github.com/nithingooud/vpn_studios",
         technologies:[ 'React JS', 'tailwind CSS']
+    },
+    {
+        title:'Safe Steps',
+        description:'Data collection IOS app for IMU sensor data collection and route guidance. For fall risk monitoring research project.',
+        image: {dpm_safesteps},
+        links:"https://docs.google.com/presentation/d/1vStWMrIQ6YM_LrRgMd2bifNdzXYDGjP52t8vUCKshTU/edit?usp=sharing",
+        technologies:[ 'IOS/Swift', 'Nodejs', 'Firebase']
     }
 ]
 

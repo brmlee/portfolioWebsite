@@ -1,21 +1,21 @@
 
 import React from "react";
-import vpn from '../assets/vpn.png'
-import copeople from '../assets/copeople.png'
+import LSA from '../assets/LSA-TS-Research.jpg'
 import dpm_safesteps from '../assets/dpm_safesteps.jpg'
+import progress from '../assets/in_progress.png'
 import Footer from './Footer'
 
 const ProjectCard = ({ image, title, description, links, technologies }) => {
     return (
         <div className="max-w-sm sm:max-w-sm md:max-w-sm bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            {title==='Snap Shot' && <a href="/#">
-                <img className="w-full rounded-t-lg h-auto object-cover " src={vpn} alt="" />
+            {title==='Social Rythms' && <a href="/#">
+                <img className="w-full rounded-t-lg h-auto max-h-64 object-cover" src={LSA} alt="" />
             </a>}
-            {title==='Co People' && <a href="/#">
-                <img className="w-full rounded-t-lg h-auto object-cover " src={copeople} alt="" />
+            {title==='DPM Route Recommendation' && <a href="/#">
+                <img className="w-full rounded-t-lg h-auto max-h-64 object-cover" src={progress} alt="" />
             </a>}
             {title==='Safe Steps' && <a href="/#">
-                <img className="w-full rounded-t-lg h-auto object-cover " src={dpm_safesteps} alt="" />
+                <img className="w-full rounded-t-lg h-auto max-h-64 object-cover " src={dpm_safesteps} alt="" />
             </a>}
             <div className="p-4 sm:p-6">
                 <a href="/#">
@@ -34,7 +34,9 @@ const ProjectCard = ({ image, title, description, links, technologies }) => {
                         </p>
                     ))}
                 </div>
-                <a href={links} className="text-red-300 border border-gray-200 rounded-lg shadow p-1 sm:p-2 lg:p-3 hover:text-green-500 duration-300">Links:</a>
+                {links && links.trim() !== '' && (
+                    <a href={links} className="text-red-300 border border-gray-200 rounded-lg shadow p-1 sm:p-2 lg:p-3 hover:text-green-500 duration-300">Link:</a>
+                )}
             </div>
         </div>
     );
@@ -64,18 +66,18 @@ const Projects = () => {
 
 export const project = [
     {
-        title:'Co People',
-        description:'Co People is a dynamic web application I crafted using React, Node JS and React. This project is a modern and engaging social platform that allows users to connect, share content and interact seamlessly.',
-        image: {vpn},
-        links:'https://github.com/nithingooud/CoPeople',
-        technologies:['MongoDb' ,'ReactJS' , 'NodeJS']
+        title:'Social Rythms',
+        description:'Social Rythms is the iOS/Android mobile application to collect user data from HealthKit for Daniel Forger. This application runs on a backend using MySQL, Docker, Poetry and Redis also running Alembic migrations.',
+        image: {LSA},
+        links:'',
+        technologies:['Swift' ,'Kotlin' , 'Python']
     },
     {
-        title:'Snap Shot',
-        description:'SnapShot is a stunning portfolio that I exclusively designed using React JS and tailwind CSS.This Project serves as a representation of a photographer’s work, highlighting their portfolio and services.',
-        image: {copeople},
-        links:"https://github.com/nithingooud/vpn_studios",
-        technologies:[ 'React JS', 'tailwind CSS']
+        title:'DPM Route Recommendation',
+        description:'cross-platform mobile app that guides users through "less stressful" routes, aimed to improve safety of elderly people.',
+        image: {progress},
+        links:"https://dpm.engin.umich.edu/research/",
+        technologies:[ 'React Native', 'TypeScript']
     },
     {
         title:'Safe Steps',

@@ -3,6 +3,7 @@ import React from "react";
 import LSA from '../assets/LSA-TS-Research.jpg'
 import dpm_safesteps from '../assets/dpm_safesteps.jpg'
 import progress from '../assets/in_progress.png'
+import AIPantry from '../assets/AIPantryImage.png'
 import Footer from './Footer'
 
 const ProjectCard = ({ image, title, description, links, technologies }) => {
@@ -16,6 +17,9 @@ const ProjectCard = ({ image, title, description, links, technologies }) => {
             </a>}
             {title==='Safe Steps' && <a href="/#">
                 <img className="w-full rounded-t-lg h-auto max-h-64 object-cover " src={dpm_safesteps} alt="" />
+            </a>}
+            {title==='AI Pantry Tracker' && <a href="/#">
+                <img className="w-full rounded-t-lg h-auto max-h-64 object-cover " src={AIPantry} alt="" />
             </a>}
             <div className="p-4 sm:p-6">
                 <a href="/#">
@@ -45,8 +49,8 @@ const ProjectCard = ({ image, title, description, links, technologies }) => {
 const Projects = () => {
     return (
         <div className="flex flex-col min-h-screen bg-black">
-            <div className='flex-grow'></div>
-            <div className="flex flex-wrap gap-7 justify-center items-center m-12 p-12">
+            <div className='flex-grow flex items-center justify-center p-4'></div>
+            <div className="flex flex-col sm:flex-row gap-4 max-w-full overflow-x-auto  justify-center">
                 {project.map((item, index) => (
                     <ProjectCard
                         key={index}
@@ -85,7 +89,14 @@ export const project = [
         image: {dpm_safesteps},
         links:"https://docs.google.com/presentation/d/1vStWMrIQ6YM_LrRgMd2bifNdzXYDGjP52t8vUCKshTU/edit?usp=sharing",
         technologies:[ 'IOS/Swift', 'Nodejs', 'Firebase']
-    }
+    },
+    {
+        title:'AI Pantry Tracker',
+        description:'A pantry tracking web application that allows you to add items with photos, and recomend recipes with current ingredients',
+        image: {AIPantry},
+        links:"https://ai-pantry-tracker-drab.vercel.app/",
+        technologies:[ 'TypeScript', 'OpenAI', 'Firebase']
+    },
 ]
 
 export default Projects

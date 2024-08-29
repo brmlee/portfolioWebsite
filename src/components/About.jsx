@@ -32,12 +32,12 @@ const About = () => {
         <div className='flex flex-col justify-around'>
           <div className='sm:px-16 px-2'>
             <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Introduction</h2>
-            <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>👨‍💻 Hi, I'm Brian Lee, a student @UMich with a passion for crafting robust backend systems and captivating mobile applications.As a seasoned <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/brian-lee04' target='_blank' rel="noreferrer">Software developer</a> I specialize in both MEAN and MERN stacks🚀.
+            <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>👨‍💻 Hi, I'm Brian Lee, a student @UMich with a passion for crafting robust backend systems and captivating mobile applications.
               <br />
-              ✍️ Beyond coding, I love playing video games in genres MOBA and FPS. I also love going on roller coasters.</p>
+              ✍️ Beyond coding, I love playing video games in genres MOBA and FPS. I also love going on roller coasters and being active playing sports like Tennis, Soccer, and Volleyball.</p>
 
             <ButtonLink
-              url='https://drive.google.com/file/d/1LI46E7Wbu7MTB2OG_qoR1vab6zkQfF7p/view?usp=sharing'
+              url='https://drive.google.com/file/d/1PemgYmY7Rb90prbVAhQjPyDZRAc2waqK/view?usp=sharing'
               text='View Resume →'
               padding={`p-3`}
             />

@@ -19,7 +19,7 @@ export const name = 'Brian Lee';
 export const experiences = [
     {
         'company': 'University of Michigan - Department of Mathematics',
-        'role': 'Product Developer',
+        'role': 'Research Assistant/Software Developer',
         'duration': 'May 2024 - Present',
         'logo': 'https://1000logos.net/wp-content/uploads/2018/08/University-of-Michigan-Emblem.jpg',
         'points': [
@@ -32,7 +32,7 @@ export const experiences = [
     },
     {
         'company': 'DPM Lab',
-        'role': 'Research Intern/Software Developer',
+        'role': 'Research Assistant/Software Developer',
         'duration': 'September 2023 - April 2024',
         'logo': 'https://sgl.dev/static/media/dpm_safesteps.8eee95e2553adcd937e4.jpg',
         'points': [

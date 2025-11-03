@@ -18,9 +18,22 @@ export const name = 'Brian Lee';
 
 export const experiences = [
     {
+        'company': 'Axiom Space',
+        'role': 'Software Engineering Intern',
+        'duration': 'May 2025 - Agust 2025',
+        'logo': 'https://i-p.rmcdn.net/64c83e20abda440021ef94c6/4566490/image-367c09cd-07bf-4e8b-abc3-c0bb0b40454e.jpg?e=webp&cX=160&cY=0&cW=2244&cH=1504',
+        'points': [
+            'Designed and deployed internal developer tooling using TypeScript, React, and SQL to automate manual reporting and compliance workflows, saving over 30 hours per week and reducing third-party tooling costs by 20%.',
+            'Led cross-functional design reviews with security and data teams to translate ambiguous business requirements into secure, scalable architectures—accelerating stakeholder buy-in and cutting feature latency by 30%.',
+            'Configured Microsoft SQL Server and IIS-based services on hardened AWS EC2 instances, using Security Groups and VPCs to enforce access controls and improve system reliability.',
+            'Integrated Azure AD SSO with SQL Server to streamline credential management across cloud and on-prem systems, increasing authentication efficiency by 40% for 200+ enterprise users.',
+        ],
+        'url': 'https://www.axiomspace.com/',
+    },
+    {
         'company': 'University of Michigan - Department of Mathematics',
         'role': 'Research Assistant/Software Developer',
-        'duration': 'May 2024 - Present',
+        'duration': 'May 2024 - September 2024',
         'logo': 'https://1000logos.net/wp-content/uploads/2018/08/University-of-Michigan-Emblem.jpg',
         'points': [
             'Developed an Android application focused on analyzing circadian rhythms using Jetpack Compose, integrating Health Connect for data collection while ensuring user privacy and security.',
@@ -29,6 +42,19 @@ export const experiences = [
             'Leveraged Firebase for backend services and real-time data synchronization, showcasing proficiency in cloud-based application development.',
         ],
         'url': 'https://lsa.umich.edu/math/people/faculty/forger.html',
+    },
+    {
+        'company': 'Headstarter AI',
+        'role': 'Software Engineer Fellow',
+        'duration': 'June 2024 - July 2024',
+        'logo': 'https://framerusercontent.com/assets/px7ENSa920YLIOjLya9QW5wQY.png',
+        'points': [
+            'Delivered four AI-driven full-stack applications using Next.js, AWS, and Firebase, including personalized study and Q&A tools serving 600+ users.',
+            'Led a 4-person engineering team to design and deploy a microservice-based AI agent platform with CI/CD pipelines, achieving a 1,000-user waitlist within eight weeks.',
+            'Implemented scalable backend APIs and real-time data synchronization to support rapid iteration and seamless user experiences.',
+            'Focused on end-to-end product delivery—from ideation to deployment—gaining hands-on experience in product design, teamwork, and cloud infrastructure.',
+        ],
+        'url': 'https://headstarter.co/',
     },
     {
         'company': 'DPM Lab',

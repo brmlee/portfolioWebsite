@@ -37,7 +37,7 @@ const About = () => {
               ✍️ Beyond coding, I love playing video games in genres MOBA and FPS. I love being active playing sports like Tennis, Soccer, and Volleyball and recenlty working out at the gym.</p>
 
             <ButtonLink
-              url='https://drive.google.com/file/d/1PemgYmY7Rb90prbVAhQjPyDZRAc2waqK/view?usp=sharing'
+              url='https://drive.google.com/file/d/1uJsDbHb3vNYi1hvhOQz3vUnwwtBMsHPf/view?usp=sharing'
               text='View Resume →'
               padding={`p-3`}
             />
